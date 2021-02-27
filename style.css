@@ -36,6 +36,53 @@ main{
     flex-shrink: 0;
 }
 
+.header{
+    background-color: #F8F6F7;
+    padding: 30px 0 136px;
+}
+
+.header .container{
+    position: relative;
+}
+
+.header-top{
+    margin-bottom: 120px;
+}
+
+.header-girl{
+    position: relative;
+    max-width: 524px;
+    width: 100%;
+}
+
+.header-girl:before{
+    content: '';
+    width: 472px;
+    height: 472px;
+    background-color: #FB9475;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -110px;
+    right: 0;
+}
+
+.header-girl img{
+    position: relative;
+    z-index: 1;
+}
+
+.header .social{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social{
+
+}
+
 .section{
     padding: 50px 0;
 }
@@ -48,6 +95,7 @@ main{
 .about-description{
     max-width: 568px;
     width: 100%;
+    position: relative;
 
 }
 
@@ -66,12 +114,22 @@ main{
     width: 100%;
 }
 
+.link{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
 .expand{
     font-size: 14px;
     line-height: 17.7px;
     color: #278AFF;
 }
 
-.link{
-    
+.btn{
+    padding: 5px;
+}
+
+.btn-large{
+    padding: 10px;
 }
