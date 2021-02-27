@@ -65,3 +65,9 @@ main{
     max-width: 442px;
     width: 100%;
 }
+
+.expand{
+    font-size: 14px;
+    line-height: 17.7px;
+    color: #278AFF;
+}
