@@ -56,7 +56,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
+    z-index: 2                                     ;
 }
 
 .brand{
@@ -184,3 +184,35 @@ main{
     border-radius: 24px;
     border: 0;
 }
+
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.footer-info{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright{
+    margin-bottom: 8px;
+}
+
+.privacy{
+    color: #278AFF;
+}
+
+.footeritem{
+    padding: 14px;
+    font-size: 12px;
+    font-weight: 15px;
+    font-weight: 5400;
+
