@@ -1,0 +1,248 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, .wrapper {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.header,
+.footer {
+  flex-shrink: 0;
+}
+
+.header {
+  background-color: #F8F6F7;
+  position: relative;
+  overflow: hidden;
+}
+
+.header .container {
+  position: relative;
+  padding: 30px 0 136px;
+}
+
+.header__top {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29, 26px;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.navigaton__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.navigation__link {
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  font-weight: 500;
+}
+
+.header__contacts {
+  padding-top: 38px;
+}
+
+.contacts__tel {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.contacts__schedule {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.hero__title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58, 51px;
+  margin-bottom: 16px;
+}
+
+.hero__subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 60px;
+}
+
+.hero {
+  z-index: 2;
+  position: relative;
+}
+
+.btn {
+  padding: 5px;
+}
+
+.btn-large {
+  padding: 10px;
+  background-color: #FB9475;
+  color: #FFFFFF;
+  border-radius: 24px;
+  border: 0;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__socialnetwork {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  margin: 0;
+}
+
+.socialnetwork {
+  list-style-type: none;
+}
+
+.header-girl img {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+.header-girl {
+  position: absolute;
+  max-width: 524px;
+  width: 100%;
+  right: 90px;
+  bottom: 0;
+}
+
+.header-girl:before {
+  content: "";
+  width: 472px;
+  height: 472px;
+  background-color: #FB9475;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -110px;
+  right: 0;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-description {
+  max-width: 568px;
+  width: 100%;
+  position: relative;
+}
+
+.top-text {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.bottom-text {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.about-video {
+  max-width: 442px;
+  width: 100%;
+}
+
+.link {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.expand {
+  font-size: 14px;
+  line-height: 17.7px;
+  color: #278AFF;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.footer-info {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  margin-bottom: 8px;
+}
+
+.privacy {
+  color: #278AFF;
+}
+
+.footeritem {
+  padding: 14px;
+  font-size: 12px;
+  font-weight: 15px;
+  font-weight: 5400;
+}
