@@ -215,6 +215,12 @@ main {
   width: 100%;
 }
 
+.advatages {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
 .footer .container {
   display: flex;
   justify-content: space-between;
