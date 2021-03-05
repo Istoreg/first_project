@@ -16,12 +16,6 @@ body {
   color: #333333;
 }
 
-h2 {
-  font-size: 48px;
-  font-weight: 700;
-  margin: 0px;
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -44,7 +38,7 @@ main {
 
 .header .container {
   position: relative;
-  padding: 30px 0 136px;
+  padding: 0 0 136px;
 }
 
 .header__top {
@@ -147,13 +141,13 @@ main {
   list-style-type: none;
 }
 
-.header-girl img {
+.header__girl img {
   position: relative;
   z-index: 1;
   display: block;
 }
 
-.header-girl {
+.header__girl {
   position: absolute;
   max-width: 524px;
   width: 100%;
@@ -161,7 +155,7 @@ main {
   bottom: 0;
 }
 
-.header-girl:before {
+.header__girl:before {
   content: "";
   width: 472px;
   height: 472px;
@@ -177,42 +171,48 @@ main {
   padding: 50px 0;
 }
 
+.block__title {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0px;
+}
+
 .about {
   display: flex;
   justify-content: space-between;
 }
 
-.about-description {
+.about__description {
   max-width: 568px;
   width: 100%;
   position: relative;
 }
 
-.top-text {
+.about__text {
   font-size: 20px;
   line-height: 32px;
 }
 
-.bottom-text {
+.about__smalltext {
   font-size: 16px;
   line-height: 26px;
 }
 
-.about-video {
-  max-width: 442px;
-  width: 100%;
-}
-
-.link {
+.about__link {
   position: absolute;
   left: 0;
   bottom: 0;
 }
 
-.expand {
+.about__expand {
   font-size: 14px;
   line-height: 17.7px;
   color: #278AFF;
+}
+
+.about__video {
+  max-width: 442px;
+  width: 100%;
 }
 
 .footer .container {
