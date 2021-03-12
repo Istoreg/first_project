@@ -304,6 +304,43 @@ main{
     font-weight: 500;
 }
 
+.masters{
+    
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__photo{
+        max-width: 255px;
+    }
+
+    &__name{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+    }
+
+    &__specialization{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    &__experience{
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 15px;
+    }
+
+    &__title{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+     
+    }
+}
+
 .footer .container{
     display: flex;
     justify-content: space-between;
