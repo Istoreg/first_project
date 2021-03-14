@@ -122,7 +122,7 @@ main{
     padding: 5px;
 }
 
-.btn-large{
+.btn_large{
     padding: 10px;
     background-color: #FB9475;
     color: #FFFFFF;
@@ -338,6 +338,43 @@ main{
         font-weight: 400;
         line-height: 20px;
      
+    }
+}
+
+.container__block{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.connection__socialnetwork{
+    display: flex;
+}
+
+.socialnetwork__item:not(:last-child){
+    margin-right: 28px;
+}
+
+.appointment{
+    &__block{
+        padding: 40px 30px;
+        margin: 40px;
+        width: 445px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+    }
+
+    &__title{
+        font-size: 18px;
+        line-height: 14px;
+        font-weight: 600;
+    }
+
+    &__text{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
     }
 }
 
