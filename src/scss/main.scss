@@ -216,7 +216,7 @@ main{
 
 .about__expand{
     font-size: 14px;
-    line-height: 17.7px;
+    line-height: 17px;
     color: #278AFF;
 }
 
@@ -347,8 +347,28 @@ main{
     justify-content: space-between;
 }
 
-.connection__socialnetwork{
-    display: flex;
+.connection{
+    &__address{
+        line-height: 20px;
+    }
+
+    &__tel{
+        line-height: 16px;
+    }
+
+    &__socialnetwork{
+        display: flex;
+    }
+
+    &__link{
+        color: #278AFF;
+        line-height: 20px;
+    }
+
+    &__text{
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 
 .socialnetwork__item:not(:last-child){
@@ -358,7 +378,7 @@ main{
 .appointment{
     &__block{
         padding: 40px 30px;
-        margin: 40px;
+        margin: 0 40px;
         width: 445px;
         background: #FFFFFF;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -376,31 +396,49 @@ main{
         line-height: 20px;
         font-weight: 400;
     }
+
+    &__username{
+        width: 100%;
+    }
+
+    &__usertel{
+        width: 100%;
+    }
+
+    &__button{
+        width: 100%;
+    }
+
+    &__link{
+        color: #278AFF;
+    }
 }
 
-.footer .container{
-    display: flex;
-    justify-content: space-between;
-    margin: 20px auto;
-}
-
-.footer-info{
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 15px;
+.footer{
+    & .container{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px auto;
+    }
+    
+    &__info{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+    
+    &__copyright{
+        margin-bottom: 8px;
+    }
+    
+    &__link{
+        color: #278AFF;
+    }
 }
 
 .footer-nav{
     display: flex;
     justify-content: space-between;
-}
-
-.copyright{
-    margin-bottom: 8px;
-}
-
-.privacy{
-    color: #278AFF;
 }
 
 .footeritem{
