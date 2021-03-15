@@ -1,5 +1,11 @@
 @import 'libs';
 
+@media screen and (max-width: 768px) {
+    .header__girl{
+        opacity: 0.5;
+    }
+}
+
 html {
     box-sizing: border-box;
 }
@@ -20,7 +26,7 @@ body{
 }
 
 .container{
-    min-width: 1140px;
+    max-width: 1140px;
     width: 100%;
 }
 
@@ -135,6 +141,12 @@ main{
     border: 0;
 }
 
+.btn:hover,
+.btn_large:hover{
+    cursor: pointer;
+    background-color: #fc815c;
+}
+
 .header__content{
     display: flex;
     justify-content: space-between;
@@ -166,6 +178,7 @@ main{
     width: 100%;
     right: 90px;
     bottom: 0;
+    transition: 0.3s;
 }
 
 .header__girl:before{
@@ -265,7 +278,6 @@ main{
 .popular{
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -324,6 +336,7 @@ main{
     &__list{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__photo{
@@ -496,14 +509,8 @@ main{
         font-weight: 400;
     }
 
-    &__username{
-        width: 100%;
-    }
-
-    &__usertel{
-        width: 100%;
-    }
-
+    &__username,
+    &__usertel,
     &__button{
         width: 100%;
     }
