@@ -1,11 +1,5 @@
 @import 'libs';
 
-@media screen and (max-width: 768px) {
-    .header__girl{
-        opacity: 0.5;
-    }
-}
-
 html {
     box-sizing: border-box;
 }
@@ -27,7 +21,34 @@ body{
 
 .container{
     max-width: 1140px;
-    width: 100%;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .header__girl{
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 1140px){
+    .container{
+        max-width: 970px;
+    }
+}
+
+
+@media (max-width: 992px){
+    .container{
+        max-width: 750px;
+    }
+}
+
+
+@media (max-width: 767px){
+    .container{
+        max-width: none;
+    }
 }
 
 .wrapper{
@@ -304,31 +325,43 @@ main{
     }
 }
 
-.price__list{
+.price{
+    &__list{
     display: flex;
     list-style: none;
     padding: 0;
-}
-
-.price__item:not(:last-child){
-    margin-right: 28px;
-}
-
-.price__link{
-    font-size: 14px;
-    line-height: 17px;
-    color:#333333;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.price__link:hover{
-    color: #00BF78;
-}
-
-.price__link:focus{
-    color: #00BF78;
-    text-decoration: underline;
+    }
+    &__item:not(:last-child){
+        margin-right: 28px;
+    }
+    &__link{
+        font-size: 14px;
+        line-height: 17px;
+        color:#333333;
+        font-weight: 500;
+        text-decoration: none;
+    }
+    &__link:hover{
+        color: #00BF78;
+    }
+    &__link:focus{
+        color: #00BF78;
+        text-decoration: underline;
+    }
+    &__block{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__description{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 .masters{
