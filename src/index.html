@@ -17,11 +17,11 @@
                     <div class="logo">Мир красоты</div>
                     <nav class="navigation">
                         <ul class="navigation__list">
-                            <li class="navigaton__item"><a class="navigation__link" href="#price__anchor">Услуги и цены</a></li>
-                            <li class="navigaton__item"><a class="navigation__link" href="#masters__anchor">Мастера</a></li>
-                            <li class="navigaton__item"><a class="navigation__link" href="#works__anchor">Наши работы</a></li>
-                            <li class="navigaton__item"><a class="navigation__link" href="#about__anchor">О нас</a></li>
-                            <li class="navigaton__item"><a class="navigation__link" href="#connection__anchor">Контакты</a></li>
+                            <li class="navigaton__item"><a class="navigation__link" href="#price">Услуги и цены</a></li>
+                            <li class="navigaton__item"><a class="navigation__link" href="#masters">Мастера</a></li>
+                            <li class="navigaton__item"><a class="navigation__link" href="#works">Наши работы</a></li>
+                            <li class="navigaton__item"><a class="navigation__link" href="#about">О нас</a></li>
+                            <li class="navigaton__item"><a class="navigation__link" href="#connection">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="contacts header__contacts">
@@ -48,9 +48,8 @@
             </div>
         </header>
         <main class="main">
-            <section class="section">
+            <section class="section" id="about">
                 <div class="container">
-                    <a name="about__anchor"></a>
                     <h2 class="block__title">О Салоне</h2>
                     <div class="about">
                         <div class="about__description">
@@ -143,9 +142,8 @@
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="price">
                 <div class="container">
-                    <a name="price__anchor"></a>
                     <h2 class="block__title">Услуги и цены</h2>
                     <div class="price">
                         <ul class="price__list">
@@ -157,12 +155,70 @@
                             <li class="price__item"><a class="price__link" href="#">Массаж</a></li>
                         </ul>
                         <div class="price__block">
-                            <div class="price_leftblock">
+                            <div class="price__service">
+                                <div class="price_element">
+                                    <p class="price__text">Женская стрижка</p>
+                                    <p class="price__description">Короткие волосы</p>
+                                    <div class="price__cash">1200₽</div>
+                                </div>
+                                <div class="price_element">
+                                    <p class="price__text">Мужская стрижка</p>
+                                    <p class="price__description">Короткие волосы</p>
+                                    <div class="price__cash">1200₽</div>
+                                </div>
+                                <div class="price_element">
+                                    <p class="price__text">Детский стиль</p>
+                                    <p class="price__description">Короткие волосы</p>
+                                    <div class="price__cash">1200₽</div>
+                                </div>
+                                <div class="price_element">
+                                    <p class="price__text">Креативный стиль</p>
+                                    <p class="price__description">Короткие волосы</p>
+                                    <div class="price__cash">1200₽</div>
+                                </div>
+                                  
+                            </div>
+                            <div class="price__service">
+                                <table class="price__table">
+                                    <tr>
+                                        <td>
+                                            <p class="price__text">Стрижка бороды и усов</p>
+                                            <p class="price__description">Короткие волосы</p>
+                                        </td>
+                                        <td>
+                                            <p class="price__cash">1200₽</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="price__text">Экспресс укладка</p>
+                                            <p class="price__description">Короткие волосы</p>
+                                        </td>
+                                        <td>
+                                            <p class="price__cash">1200₽</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="price__text">Укладка дневная</p>
+                                            <p class="price__description">Короткие волосы</p>
+                                        </td>
+                                        <td>
+                                            <p class="price__cash">1200₽</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="price__text">Прическа вечерняя (свадебная)</p>
+                                            <p class="price__description">Короткие волосы</p>
+                                        </td>
+                                        <td>
+                                            <p class="price__cash">3000₽</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
 
-                            </div>
-                            <div class="price_rightblock">
-                                
-                            </div>
                             
                         </div>
 
@@ -170,9 +226,8 @@
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="masters">
                 <div class="container">
-                    <a name="masters__anchor"></a>
                     <h2 class="block__title">Мастера</h2>
                     <div class="masters">
                         <p class="masters__title">Дружная команда настоящих профессионалов</p>
@@ -207,9 +262,8 @@
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="works">
                 <div class="container">
-                    <a name="works__anchor"></a>
                     <h2 class="block__title">Наши работы</h2>
                 </div>
                 <div class="works">
@@ -235,10 +289,9 @@
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section" id="connection">
                 <div class="container container__block">
                     <div class="connection">
-                        <a name="connection__anchor"></a>
                         <h2 class="block__title">Контакты</h2>
                         <p class="connection__address">Томск, проспект Ленина, дом 13</p>
                         <p class="connection__tel">8 (499) 686-17-62</p>
@@ -284,5 +337,6 @@
             </div>
         </footer>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 </html>
