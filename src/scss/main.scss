@@ -153,6 +153,9 @@ main{
 .btn{
     padding: 5px;
 }
+.btn:focus, .btn_large:focus{ 
+    outline: none; 
+}
 
 .btn_large{
     padding: 10px;
@@ -160,12 +163,17 @@ main{
     color: #FFFFFF;
     border-radius: 24px;
     border: 0;
+    transition: 0.3s;
 }
 
 .btn:hover,
 .btn_large:hover{
     cursor: pointer;
     background-color: #fc815c;
+}
+
+.btn:active, .btn_large:active{ 
+    background-color: #f55727; 
 }
 
 .header__content{
@@ -484,13 +492,53 @@ main{
         background-size: cover;
         position: relative;
         overflow: hidden;
-        cursor: pointer;
+        cursor: pointer;    
+    }
+    &__img:before{
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        background-color: #000;
+        opacity: 0;
+        transition: 0.15s;
+        z-index: 1;
+        }
+    &__img:hover:before{
+        opacity: 0.5;
+    }
+    &__img:after{
+        content: '🔍 Увеличить';
+        font-weight: 500;
+        color: #fff;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 120px;
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        opacity: 0;
+        transition: 0.15s;
+    }
+
+    &__img:hover:after{
+        opacity: 1;
     }
 }
 
 .carousel{
+    position: relative;
     &__nav{
         position: absolute;
+        top: 36px;
+        right: 0;
     }
     &_left, &_right{
     color: rgba(0, 191, 120, 1);
@@ -498,6 +546,7 @@ main{
     border: none;
     cursor: pointer;
     }
+    &_left:focus, &_right:focus { outline: none; }
 }
 
 .brands{
