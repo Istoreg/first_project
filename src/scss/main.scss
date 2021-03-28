@@ -321,20 +321,21 @@ main{
     list-style: none;
     padding: 0;
     }
-    &__item:not(:last-child){
-        margin-right: 28px;
-    }
-    &__link{
+    &__item{
+        cursor: pointer;
         font-size: 14px;
         line-height: 17px;
         color:#333333;
         font-weight: 500;
         text-decoration: none;
     }
-    &__link:hover{
+    &__item:not(:last-child){
+        margin-right: 28px;
+    }
+    &__item:hover{
         color: #00BF78;
     }
-    &__link:focus{
+    &__item:target{
         color: #00BF78;
         text-decoration: underline;
     }
@@ -375,6 +376,12 @@ main{
         line-height: 24px;
         color: #00BF78;
     }
+    &__content {
+        display: none; /* по умолчанию прячем все блоки */
+      }
+    &__content.active {
+        display: block; /* по умолчанию показываем нужный блок */
+      }
 }
 
 .masters{
