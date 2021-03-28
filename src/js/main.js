@@ -17,9 +17,23 @@ $('.scrollto a').on('click', function() {
     $('html, body').animate({
         scrollTop: $(href).offset().top
     }, {
-        duration: 370,   // по умолчанию «400» 
-        easing: "linear" // по умолчанию «swing» 
+        duration: 370,
+        easing: "linear" 
     });
 
     return false;
 });
+
+
+//табы для блока "Услуги и цены"
+(function($) {
+    $(function() {
+      
+      $('ul.price__list').on('click', 'li:not(.active)', function() {
+        $(this)
+          .addClass('active').siblings().removeClass('active')
+          .closest('div.price').find('div.price__content').removeClass('active').eq($(this).index()).addClass('active');
+      });
+      
+    });
+    })(jQuery);
