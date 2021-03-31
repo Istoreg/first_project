@@ -24,16 +24,12 @@ $('.scrollto a').on('click', function() {
     return false;
 });
 
-
-//табы для блока "Услуги и цены"
-(function($) {
-    $(function() {
-      
-      $('ul.price__list').on('click', 'li:not(.active)', function() {
-        $(this)
-          .addClass('active').siblings().removeClass('active')
-          .closest('div.price').find('div.price__content').removeClass('active').eq($(this).index()).addClass('active');
-      });
-      
-    });
-    })(jQuery);
+//бургер
+$('.mobile div').on('click', () => {
+    $('.mobile div').toggleClass('active');
+    $('.mobile nav').toggleClass('open');
+    $('.mobile nav ul').toggleClass('show');
+});
+for (let a = 1; a <= $(".mobile ul li").length; a++){ 
+    $(".mobile ul li:nth-child("+ a +")").css("animation-delay", "."+ (a+1) +"s");    
+}
