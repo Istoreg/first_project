@@ -1,3 +1,4 @@
+
 //слайдер галереи
 $(function() {
 	$('#carousel').slick({
