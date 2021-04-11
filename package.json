@@ -4,8 +4,8 @@
   "description": "сборка gulp",
   "main": "index.html",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build"
+    "start": "cross-env NODE_ENV=development gulp",
+    "build": "cross-env NODE_ENV=production gulp build"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,13 @@
   },
   "homepage": "https://github.com/Istoreg/first_project#readme",
   "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
     "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.14",
+    "cross-env": "^7.0.3",
     "cssnano": "^4.1.10",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -27,9 +32,12 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemap": "^1.0.1",
     "gulp-sourcemaps": "^3.0.0",
-    "postcss": "^8.2.8"
+    "postcss": "^8.2.8",
+    "webpack": "^5.31.2",
+    "webpack-stream": "^6.1.2"
   },
   "dependencies": {
+    "gulp-rename": "^2.0.0",
     "normalize.css": "^8.0.1"
   }
 }
